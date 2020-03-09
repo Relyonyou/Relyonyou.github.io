@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My New Hugo Site</title>
+    <link>https://Relyonyou.github.io/post/</link>
+    <description>Recent content in Posts on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Mar 2020 13:54:10 +0800</lastBuildDate>
+    
+	<atom:link href="https://Relyonyou.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blog</title>
+      <link>https://Relyonyou.github.io/post/blog/</link>
+      <pubDate>Mon, 09 Mar 2020 13:54:10 +0800</pubDate>
+      
+      <guid>https://Relyonyou.github.io/post/blog/</guid>
+      <description>SQL语句的分类 1. ## DDL语句 2.## DML语句 3. ## DQL语句
+DDL语句:数据库，表，试图，索引，存储过程进行定义
+ create table/database table_name/database_name (字段名 属性 , 字段名 属性 , &amp;hellip;&amp;hellip;);
+drop 删除数据库或数据表
+alter 可以增加,修改,删除数据 增加字段&amp;mdash;alter table table_name add 字段名 属性; 修改字段&amp;mdash;alter table table_name change 旧字段名 新字段名 属性 ; 修改表名&amp;mdash;alter table table_name rename to 新表名; 删除字段&amp;mdash;alter table table_name drop 字段名
+ DML语句:出入数据INSERT，删除数据DELETE，更新数据UPDATE &amp;gt;insert &amp;gt; &amp;gt;向数据表插入数据 &amp;gt;insert into table_name values(插入的数据) , () , () , &amp;hellip;&amp;hellip; ;
+ delete 删除数据 delete from table_name where 字段名=&amp;ldquo;某一具体的值&amp;rdquo;;</description>
+    </item>
+    
+  </channel>
+</rss>
