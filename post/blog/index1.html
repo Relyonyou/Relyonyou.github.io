@@ -192,63 +192,56 @@
 <ul>
 <li>
 <ul>
-<li><a href="#sql语句的分类">SQL语句的分类</a></li>
+<li><a href="关于Git的一些操作">关于Git的一些操作</a></li>
 </ul></li>
 </ul>
 </nav>
                 
                 
 
-<h2 id="sql语句的分类">SQL语句的分类</h2>
+<h2>关于Git的一些操作</h2>
 
-<p><strong>1. ## DDL语句
- 2.## DML语句
- 3. ## DQL语句</strong></p>
+<h2>----</h2>
 
-<p>DDL语句:数据库，表，试图，索引，存储过程进行定义</p>
+<h2>从本地上传文件到Github</h2>
 
-<blockquote>
-<p>create table/database table_name/database_name (字段名 属性 , 字段名 属性  , &hellip;&hellip;);</p>
+<ol><li>将本地文件添加到分支的项目中</li><li>初始化本地仓库 ------ git init</li><li>将本地内容添加至git本地暂存区中 -------git add .</li><li>将暂存区的信息添加到本地仓库中 ------git commit -m &quot;XXXX&quot;</li><li>添加远程仓库路径git remote add origin https://github.com/xxxx/xxx.git</li><li>将本地仓库的内容推到项目的master分支上去 -----git push -u origin master</li></ol>
 
-<p>drop
-删除数据库或数据表</p>
+<hr/>
 
-<p>alter
-可以增加,修改,删除数据
-增加字段&mdash;alter table table_name  add  字段名 属性;
-修改字段&mdash;alter table table_name   change 旧字段名 新字段名 属性 ;
-修改表名&mdash;alter table table_name rename to 新表名;
-删除字段&mdash;alter table table_name drop 字段名</p>
-</blockquote>
+<h2>提交PR到别人的项目中</h2>
 
-<p>DML语句:出入数据INSERT，删除数据DELETE，更新数据UPDATE
-&gt;insert
-&gt;
-&gt;向数据表插入数据
-&gt;insert into table_name values(插入的数据)  , () , () , &hellip;&hellip; ;</p>
+<h2>----</h2>
 
-<blockquote>
-<p>delete
-删除数据
-delete from table_name where 字段名=&ldquo;某一具体的值&rdquo;;</p>
+<p>  1.先将别人的仓库fork到自己的名下
+  2.然后将仓库克隆到本地(clone,将项目地址clone下来)
+  git clone xxx
+  3.在本地修改代码
+  支持markdown格式
+  4.提交代码到自己的GitHub的远程仓库(见上文)
+  5.提交PR
+  <img alt="enter description here" src="../../img/1.webp"/></p>
 
-<p>update
-update table_name set 字段名=&ldquo;某一具体的值&rdquo; where 加限定条件;</p>
-</blockquote>
+<img alt="enter description here" src="../../img/2.webp"/>
+<img alt="enter description here" src="../../img/3.webp"/>
 
-<p>DQL语句:数据库查询语句：查询数据SELECT
-&gt;select
-&gt;select语句可以根据子条件进行多样查询,有简单的查询,也有嵌套查询或者是联合多表查询
-&gt;<img src="https://img-blog.csdnimg.cn/20191226181036282.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MDc3MTcz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" />
-&gt;
-&gt;
-&gt;
-&gt;
-&gt;</p>
+<h2>一些Git的常用命令</h2>
 
-<p>DCL语句:数据库控制语句：控制用户的访问权限GRANT，REVOKE
-&gt;commit , rollback , grant
-&gt;</p>
+<h2>----</h2>
+
+<p>git clone url：获取一个url对应的远程Git repo, 创建一个local copy
+git add . ：将工作区中所有未跟踪或者修改的文件添加到暂存区
+git commit -m &quot;提交注释信息&quot; ：将暂存区里的改动给提交到本地的版本库
+git push origin master：将本地的master分支推送到远程主机(缺省是origin名称，可以通过git remote查询远程主机的别名)
+git remote：列出remote 别名。
+git remote rm [别名]: 删除一个存在的remote alias。
+git remote set-url [别名] [url]:更新远程repo的url。
+git status： 查询repo的状态。
+git branch： 列出本地所有分支,当前分支会被星号标示出。
+git branch (branchname): 创建一个新的分支(当你用这种方式创建分支的时候,分支是基于你的上一次提交建立的)。
+git checkout (branchname)：切换到一个分支。
+git config -l：查看git config的信息
+git push -f：强推（慎用），即利用强覆盖方式用你本地的代码替代git仓库内的内容</p>
 
 
                 
@@ -313,13 +306,11 @@ update table_name set 字段名=&ldquo;某一具体的值&rdquo; where 加限定
             
             
                 </ul>
-	
-                    <p class="copyright text-muted">
-                    	Copyright &copy; My Blog 2020
-                    	<br>
-                    	Github:|<a href="https://github.com/Relyonyou">Relyonyou</a>
-                    </p>
-           
+		<p class="copyright text-muted">
+			Copyright &copy; My Blog 2020
+			<br>
+			Github:|<a href="https://github.com/Relyonyou">Relyonyou</a>
+		</p>
             </div>
         </div>
     </div>
