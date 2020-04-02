@@ -1,0 +1,1888 @@
+<!DOCTYPE html><html lang="en"><head>
+<title> index2.md</title>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="()">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/svg-with-js.css" crossorigin="anonymous">
+<style type="text/css">
+/* normal start */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Tahoma, Arial, 'Hiragino Sans GB', STHeiti, "Microsoft YaHei", "微软雅黑", 'WenQuanYi Micro Hei', STXihei, "华文细黑", Heiti, "黑体", SimSun, "宋体", Song, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: normal;
+  color: #2f2f2f;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+
+/* link start */
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+a:hover,
+a:active {
+  outline: 0;
+}
+a {
+  color: #0088cc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #005580;
+  text-decoration: underline;
+}
+/* link end */
+
+
+/* head start */
+h1,h2,h3,h4,h5,h6 {
+  font-weight: bold;
+  text-rendering: optimizelegibility;
+}
+
+h1 {
+  font-size: 2rem;;
+  margin: .8em 0 .6em 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin: .7em 0 .5em 0;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin: .6em 0 .4em 0;
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin: .5em 0 .3em 0;
+}
+
+h5 {
+  font-size: 1.4rem;
+  margin: .5em 0 .3em 0;
+}
+
+h6 {
+  font-size: 1.3rem;
+  margin: .5em 0 .3em 0;
+}
+/* head end */
+
+.xsj_hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px dashed #2f2f2f;
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+}
+
+p {
+    margin: 1.1em 0 1.6em;
+}
+
+pre{
+    line-height: initial !important;
+    word-wrap: break-word;
+    word-break: break-word;
+    tab-size: 4;
+    white-space: pre-wrap;
+    font-family: monospace;
+}
+
+kbd{
+    display: inline-block;
+    padding: 3px 5px;
+    font-size: 11px;
+    line-height: 10px;
+    color: #2f2f2f;
+    vertical-align: middle;
+    background: #fcfcfc;
+    border: solid 1px #2f2f2f;
+    border-bottom-color: #2f2f2f;
+    border-radius: 3px;
+    box-shadow: inset 0 -1px 0 #2f2f2f;
+}
+
+address {
+  display: block;
+  margin-bottom: 20px;
+  font-style: normal;
+  line-height: 20px;
+}
+
+
+small {
+  font-size: 85%;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+cite {
+  font-style: normal;
+}
+
+
+/* list start */
+ul,ol {
+  padding: 0;
+  margin: 1.1em 0 1.1em 35px;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* list end */
+
+dl {
+  margin-bottom: 20px;
+}
+
+dt,
+dd {
+  line-height: 20px;
+}
+
+dt {
+  font-weight: bold;
+  line-height: 1.35em;
+}
+
+dd {
+  margin-left: 10px;
+  line-height: 1.35em;
+}
+abbr[title],
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted #999999;
+}
+
+/* normal end */
+
+
+/* blockquote start */
+blockquote {
+  padding: 20px 20px;
+  margin: 20px 0 20px;
+  border-left: 10px solid rgba(153, 153, 153, 0.2);
+  background: rgba(204, 204, 204, 0.2);
+}
+
+blockquote p {
+    margin: 1.1em 0 1.1em;
+}
+
+blockquote>*:first-child {
+  margin-top: 0;
+}
+
+blockquote>*:last-child {
+  margin-bottom: 0;
+}
+
+blockquote small {
+  display: block;
+  line-height: 20px;
+  color: #999999;
+}
+
+blockquote small:before {
+  content: '\2014 \00A0';
+}
+
+blockquote footer{
+    margin: 1em 0;
+    font-style: italic;
+}
+
+blockquote footer cite {
+    margin: 0 1em;
+}
+
+/* blockquote end */
+
+/**
+ * Treeview syntax highlighting based on highlight.js
+ * Copyright (c) 2014-2015, Asciidocfx Team, (MIT Licensed)
+ * https://github.com/asciidocfx/highlight-treeview.js
+ */
+.language-treeview.hljs{
+  position: relative;
+}
+.hljs-folder,
+.hljs-hiddenfile,
+.hljs-file {
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    height: 16px;
+}
+.hljs-folder:before,
+.hljs-file:before,
+.hljs-hiddenfile:before {
+    top: 0;
+    content: '';
+    width: 14px;
+    height: 12px;
+    margin-top: 0px;
+    margin-right: 3px;
+    position: relative;
+    display: inline-block;
+    background-size: 14px;
+    background-repeat: no-repeat;
+}
+.hljs-file:before,
+.hljs-hiddenfile:before {
+    height: 14px;
+    margin-left: 1px;
+}
+.hljs-hiddenfile {
+    opacity: 0.6;
+}
+.hljs-file.photo:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f1c5";
+}
+.hljs-file.plain:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f016";
+}
+.hljs-file.source:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f1c9";
+}
+.hljs-file.archive:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f1c6";
+}
+.hljs-file.audio:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f1c7";
+}
+.hljs-file.video:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f1c8";
+}
+.hljs-file.pdf:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f1c1";
+}
+.hljs-file.xls:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f1c3";
+}
+.hljs-file.doc:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f1c2";
+}
+.hljs-file.ppt:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f1c4";
+}
+.hljs-folder:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f114";
+}
+.hljs-hiddenfile:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f016";
+}
+.hljs-tvline {
+    margin-left: 6px;
+    position: absolute;
+    text-indent: -99em;
+    padding-bottom: 8px;
+    vertical-align: top;
+    display: inline-block;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: rgb(94, 144, 117);
+}
+.hljs-folder-branch {
+    width: 8px;
+    height: 8px;
+    margin-top: -1px;
+    margin-left: 6px;
+    text-indent: -99em;
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(94, 144, 117);
+}
+.hljs-folder-branch.win {
+    width: 14px;
+    margin-right: 2px;
+}
+.hljs-folder-last-branch {
+    height: 7px;
+    width: 7px;
+    margin-left: 6px;
+    text-indent: -99em;
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(94, 144, 117);
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: rgb(94, 144, 117);
+}
+.hljs-folder-last-branch.win {
+    width: 13px;
+    margin-right: 2px;
+}
+
+
+/**
+ * Treeview syntax highlighting based on highlight.js
+ */
+
+/*wavedrom start*/
+
+.wavedrom_svg text, .wavedrom_svg_defs text {
+    font-size:11pt;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+    font-stretch:normal;
+    text-align:center;
+    fill-opacity:1;
+    font-family:Helvetica
+}
+.wavedrom_svg .muted, .wavedrom_svg_defs .muted {
+    fill:#aaa
+}
+.wavedrom_svg .warning, .wavedrom_svg_defs .warning {
+    fill:#f6b900
+}
+.wavedrom_svg .error, .wavedrom_svg_defs .error {
+    fill:#f60000
+}
+.wavedrom_svg .info, .wavedrom_svg_defs .info {
+    fill:#0041c4
+}
+.wavedrom_svg .success, .wavedrom_svg_defs .success {
+    fill:#00ab00
+}
+.wavedrom_svg .h1, .wavedrom_svg_defs .h1 {
+    font-size:33pt;
+    font-weight:bold
+}
+.wavedrom_svg .h2, .wavedrom_svg_defs .h2 {
+    font-size:27pt;
+    font-weight:bold
+}
+.wavedrom_svg .h3, .wavedrom_svg_defs .h3 {
+    font-size:20pt;
+    font-weight:bold
+}
+.wavedrom_svg .h4, .wavedrom_svg_defs .h4 {
+    font-size:14pt;
+    font-weight:bold
+}
+.wavedrom_svg .h5, .wavedrom_svg_defs .h5 {
+    font-size:11pt;
+    font-weight:bold
+}
+.wavedrom_svg .h6, .wavedrom_svg_defs .h6 {
+    font-size:8pt;
+    font-weight:bold
+}
+.wavedrom_svg_defs .s1 {
+    fill:none;
+    stroke:#000;
+    stroke-width:1;
+    stroke-linecap:round;
+    stroke-linejoin:miter;
+    stroke-miterlimit:4;
+    stroke-opacity:1;
+    stroke-dasharray:none
+}
+.wavedrom_svg_defs .s2 {
+    fill:none;
+    stroke:#000;
+    stroke-width:0.5;
+    stroke-linecap:round;
+    stroke-linejoin:miter;
+    stroke-miterlimit:4;
+    stroke-opacity:1;
+    stroke-dasharray:none
+}
+.wavedrom_svg_defs .s3 {
+    color:#000;
+    fill:none;
+    stroke:#000;
+    stroke-width:1;
+    stroke-linecap:round;
+    stroke-linejoin:miter;
+    stroke-miterlimit:4;
+    stroke-opacity:1;
+    stroke-dasharray:1,3;
+    stroke-dashoffset:0;
+    marker:none;
+    visibility:visible;
+    display:inline;
+    overflow:visible;
+    enable-background:accumulate
+}
+.wavedrom_svg_defs .s4 {
+    color:#000;
+    fill:none;
+    stroke:#000;
+    stroke-width:1;
+    stroke-linecap:round;
+    stroke-linejoin:miter;
+    stroke-miterlimit:4;
+    stroke-opacity:1;
+    stroke-dasharray:none;
+    stroke-dashoffset:0;
+    marker:none;
+    visibility:visible;
+    display:inline;
+    overflow:visible
+}
+.wavedrom_svg_defs .s5 {
+    fill:#fff;
+    stroke:none
+}
+.wavedrom_svg_defs .s6 {
+    color:#000;
+    fill:#ffffb4;
+    fill-opacity:1;
+    fill-rule:nonzero;
+    stroke:none;
+    stroke-width:1px;
+    marker:none;
+    visibility:visible;
+    display:inline;
+    overflow:visible;
+    enable-background:accumulate
+}
+.wavedrom_svg_defs .s7 {
+    color:#000;
+    fill:#ffe0b9;
+    fill-opacity:1;
+    fill-rule:nonzero;
+    stroke:none;
+    stroke-width:1px;
+    marker:none;
+    visibility:visible;
+    display:inline;
+    overflow:visible;
+    enable-background:accumulate
+}
+.wavedrom_svg_defs .s8 {
+    color:#000;
+    fill:#b9e0ff;
+    fill-opacity:1;
+    fill-rule:nonzero;
+    stroke:none;
+    stroke-width:1px;
+    marker:none;
+    visibility:visible;
+    display:inline;
+    overflow:visible;
+    enable-background:accumulate
+}
+.wavedrom_svg_defs .s9 {
+    fill:#000;
+    fill-opacity:1;
+    stroke:none
+}
+.wavedrom_svg_defs .s10 {
+    color:#000;
+    fill:#fff;
+    fill-opacity:1;
+    fill-rule:nonzero;
+    stroke:none;
+    stroke-width:1px;
+    marker:none;
+    visibility:visible;
+    display:inline;
+    overflow:visible;
+    enable-background:accumulate
+}
+.wavedrom_svg_defs .s11 {
+    fill:#0041c4;
+    fill-opacity:1;
+    stroke:none
+}
+.wavedrom_svg_defs .s12 {
+    fill:none;
+    stroke:#0041c4;
+    stroke-width:1;
+    stroke-linecap:round;
+    stroke-linejoin:miter;
+    stroke-miterlimit:4;
+    stroke-opacity:1;
+    stroke-dasharray:none
+}
+
+/*wavedrom stop*/
+
+
+/* fontawesome */
+
+/*!
+ * Font Awesome Free 5.7.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+svg:not(:root).svg-inline--fa {
+  overflow: visible; }
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -.125em; }
+  .svg-inline--fa.fa-lg {
+    vertical-align: -.225em; }
+  .svg-inline--fa.fa-w-1 {
+    width: 0.0625em; }
+  .svg-inline--fa.fa-w-2 {
+    width: 0.125em; }
+  .svg-inline--fa.fa-w-3 {
+    width: 0.1875em; }
+  .svg-inline--fa.fa-w-4 {
+    width: 0.25em; }
+  .svg-inline--fa.fa-w-5 {
+    width: 0.3125em; }
+  .svg-inline--fa.fa-w-6 {
+    width: 0.375em; }
+  .svg-inline--fa.fa-w-7 {
+    width: 0.4375em; }
+  .svg-inline--fa.fa-w-8 {
+    width: 0.5em; }
+  .svg-inline--fa.fa-w-9 {
+    width: 0.5625em; }
+  .svg-inline--fa.fa-w-10 {
+    width: 0.625em; }
+  .svg-inline--fa.fa-w-11 {
+    width: 0.6875em; }
+  .svg-inline--fa.fa-w-12 {
+    width: 0.75em; }
+  .svg-inline--fa.fa-w-13 {
+    width: 0.8125em; }
+  .svg-inline--fa.fa-w-14 {
+    width: 0.875em; }
+  .svg-inline--fa.fa-w-15 {
+    width: 0.9375em; }
+  .svg-inline--fa.fa-w-16 {
+    width: 1em; }
+  .svg-inline--fa.fa-w-17 {
+    width: 1.0625em; }
+  .svg-inline--fa.fa-w-18 {
+    width: 1.125em; }
+  .svg-inline--fa.fa-w-19 {
+    width: 1.1875em; }
+  .svg-inline--fa.fa-w-20 {
+    width: 1.25em; }
+  .svg-inline--fa.fa-pull-left {
+    margin-right: .3em;
+    width: auto; }
+  .svg-inline--fa.fa-pull-right {
+    margin-left: .3em;
+    width: auto; }
+  .svg-inline--fa.fa-border {
+    height: 1.5em; }
+  .svg-inline--fa.fa-li {
+    width: 2em; }
+  .svg-inline--fa.fa-fw {
+    width: 1.25em; }
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -.125em;
+  width: 1em; }
+  .fa-layers svg.svg-inline--fa {
+    -webkit-transform-origin: center center;
+            transform-origin: center center; }
+
+.fa-layers-text, .fa-layers-counter {
+  display: inline-block;
+  position: absolute;
+  text-align: center; }
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center; }
+
+.fa-layers-counter {
+  background-color: #ff253a;
+  border-radius: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  height: 1.5em;
+  line-height: 1;
+  max-width: 5em;
+  min-width: 1.5em;
+  overflow: hidden;
+  padding: .25em;
+  right: 0;
+  text-overflow: ellipsis;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right; }
+
+.fa-layers-bottom-right {
+  bottom: 0;
+  right: 0;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right; }
+
+.fa-layers-bottom-left {
+  bottom: 0;
+  left: 0;
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left; }
+
+.fa-layers-top-right {
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right; }
+
+.fa-layers-top-left {
+  left: 0;
+  right: auto;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top left;
+          transform-origin: top left; }
+
+.fa-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -.0667em; }
+
+.fa-xs {
+  font-size: .75em; }
+
+.fa-sm {
+  font-size: .875em; }
+
+.fa-1x {
+  font-size: 1em; }
+
+.fa-2x {
+  font-size: 2em; }
+
+.fa-3x {
+  font-size: 3em; }
+
+.fa-4x {
+  font-size: 4em; }
+
+.fa-5x {
+  font-size: 5em; }
+
+.fa-6x {
+  font-size: 6em; }
+
+.fa-7x {
+  font-size: 7em; }
+
+.fa-8x {
+  font-size: 8em; }
+
+.fa-9x {
+  font-size: 9em; }
+
+.fa-10x {
+  font-size: 10em; }
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em; }
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0; }
+  .fa-ul > li {
+    position: relative; }
+
+.fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit; }
+
+.fa-border {
+  border: solid 0.08em #eee;
+  border-radius: .1em;
+  padding: .2em .25em .15em; }
+
+.fa-pull-left {
+  float: left; }
+
+.fa-pull-right {
+  float: right; }
+
+.fa.fa-pull-left,
+.fas.fa-pull-left,
+.far.fa-pull-left,
+.fal.fa-pull-left,
+.fab.fa-pull-left {
+  margin-right: .3em; }
+
+.fa.fa-pull-right,
+.fas.fa-pull-right,
+.far.fa-pull-right,
+.fal.fa-pull-right,
+.fab.fa-pull-right {
+  margin-left: .3em; }
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear; }
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8); }
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
+
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg); }
+
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1); }
+
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1); }
+
+.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1); }
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical,
+:root .fa-flip-both {
+  -webkit-filter: none;
+          filter: none; }
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  position: relative;
+  width: 2.5em; }
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em; }
+
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em; }
+
+.fa-inverse {
+  color: #fff; }
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/* fontawesome end*/
+
+/* xsj patch start */
+
+.xsj_anchor{
+  overflow: hidden;
+  float: right;
+}
+
+.blank_anchor_id {
+    float: right;
+    width: 1px;
+    height: 0px;
+}
+.blank_anchor_id {
+    visibility: hidden;
+}
+.blank_anchor_id:before {
+    content: 'a';
+}
+.xsj_foreignObject{
+  width: 100%!important;
+  height: 100%!important;
+  text-align: initial;
+  word-spacing: normal;
+}
+.xsj_foreignObject hr{
+    margin: inherit;
+}
+.xsj_foreignObject.xsj_drawio_foreignObject *{
+  font-size: inherit;
+}
+.xsj_export_pdf .xsj_foreignObject.xsj_drawio_foreignObject *{
+  font-size: 85%;
+}
+
+.xsj_foreignObject.xsj_drawio_foreignObject h1{
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.xsj_foreignObject.xsj_drawio_foreignObject h2{
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.xsj_foreignObject.xsj_drawio_foreignObject h3{
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.xsj_foreignObject.xsj_drawio_foreignObject h4{
+  font-size: 1em;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.xsj_foreignObject.xsj_drawio_foreignObject h5{
+  font-size: .83em;
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.xsj_foreignObject.xsj_drawio_foreignObject h6{
+  font-size: .67em;
+  margin-block-start: 2.33em;
+  margin-block-end: 2.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+/* xsj patch end */
+
+
+/*svg start*/
+text{
+    font-size: 14px;
+}
+/*svg end*/
+
+/* title start */
+h1.story_title {
+    font-size: 3rem;
+    margin: 0.7em 0;
+}
+/* title end */
+
+/* tag start */
+.story_tags {
+    margin: 0 0 1.2em;
+}
+.tag.label{
+    display: inline-block;
+    vertical-align: baseline;
+    line-height: 1;
+    margin: 0 0.5em 0.5em 0;
+    background: #e2e2e2;
+    border-color: #e2e2e2;
+    background-image: none;
+    padding: 0.6em 0.8em;
+    font-weight: bold;
+    border-radius: 0.2857rem;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+/* tag end */
+
+/* emoji */
+img.emoji {
+    width: 1em;
+    line-height: 1em;
+    vertical-align: baseline;
+    margin-bottom: 0;
+}
+/* emoji */
+
+/* align grammar start*/
+
+.story_align_left, .story_align_left .story_image_container {
+    text-align: left;
+}
+.story_align_right, .story_align_right .story_image_container {
+    text-align: right;
+}
+.story_align_center, .story_align_center .story_image_container {
+    text-align: center;
+}
+.story_align_justify, .story_align_justify .story_image_container {
+    text-align: justify;
+}
+
+/* align grammar end*/
+
+/*mindmap start*/
+.mindmap_container {
+  text-align: center;
+}
+
+.xsj_mindmap_caption{
+   border-bottom: 1px solid #d9d9d9;
+  display: inline-block;
+  color: #999;
+  padding: 10px;
+}
+/*mindmap end*/
+
+
+
+/* table start*/
+
+table {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  word-break: initial;
+  border: 1px solid rgba(34,36,38,.15);
+}
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+
+.table th {
+  font-weight: bold;
+}
+
+.table thead th {
+  vertical-align: bottom;
+}
+
+.table caption + thead tr:first-child th,
+.table caption + thead tr:first-child td,
+.table colgroup + thead tr:first-child th,
+.table colgroup + thead tr:first-child td,
+.table thead:first-child tr:first-child th,
+.table thead:first-child tr:first-child td {
+  border-top: 0;
+}
+
+.table tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+
+.table .table {
+  background-color: #ffffff;
+}
+
+
+.table-striped tbody > tr:nth-child(odd) > td,
+.table-striped tbody > tr:nth-child(odd) > th {
+  background-color: #f9f9f9;
+}
+
+.table-celled.table tr td,.table-celled.table tr th {
+    border-left: 1px solid rgba(34,36,38,.1)
+}
+
+.table-celled.table tr td:first-child,.table-celled.table tr th:first-child {
+    border-left: none
+}
+/* table end*/
+
+/*code start*/
+
+code {
+    background-color: #F0F0F0;
+    border-radius: 4px;
+    padding: 2px 4px;
+    margin: 0 .225em;
+    color: #880000;
+}
+body code{
+    border: 0;
+    border-radius: 4px;
+    font-size: 90%;
+}
+
+.hljs, .hljs * {
+  overflow: visible !important;
+} 
+
+body .xiaoshujiang_code {
+    border: 0;
+    border-radius: 4px;
+    font-size: 90%;
+}
+.xiaoshujiang_code ol{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.xiaoshujiang_pre {
+    line-height: initial !important;
+    word-wrap: break-word;
+    word-break: break-word;
+    tab-size: 4;
+    white-space: pre-wrap;
+    font-family: monospace;
+}
+.xiaoshujiang_code_container pre{
+    margin: 0px;
+}
+.xiaoshujiang_code_container.xiaoshujiang_code_chunk{
+    box-shadow: 0 0 0 1px #A3C293 inset,0 0 0 0 transparent;
+    margin: 1em 0;
+    padding: 1em;
+}
+.xiaoshujiang_code_container.xiaoshujiang_code_chunk_hide_code{
+    box-shadow: initial;
+    padding: initial;
+    padding-bottom: 2em;
+}
+.xiaoshujiang_code_container .out_put{
+    box-shadow: 0 0 0 1px #A3C293 inset,0 0 0 0 transparent;
+    margin: 1em 0;
+    background-color: #FCFFF5;
+    color: #2C662D;
+    padding: 1em;
+}
+.xiaoshujiang_code_container .out_put_error{
+    background-color: #FFF6F6;
+    color: #9F3A38;
+    margin: 1em 0;
+    box-shadow: 0 0 0 1px #E0B4B4 inset,0 0 0 0 transparent;
+    padding: 1em;
+}
+
+/*code end*/
+
+/* code line nums start*/
+
+code.hljs.code_linenums, .xiaoshujiang_code.hljs.code_linenums{
+    position: relative;
+}
+.ol_linenums{
+    padding: 0px;
+    margin-left: 2em;
+    border-left: 1px solid #e0e0e0;
+}
+.li_linenum{
+    position:relative;
+    margin-left: 0.5em;
+    list-style: none;
+    counter-increment: lines 1;
+}
+.li_linenum.li_list_style{
+    list-style: inherit;
+    margin-left: 5px;
+}
+.li_linenum:before, .li_linenum_before_span{
+    content: counter(lines, decimal);
+  position: absolute;
+  left: -3em;
+  text-align: center;
+  width: 2.5em;
+  vertical-align: top;
+}
+.li_linenum_before_span_hide{
+    display: none;
+}
+.xiaoshujiang_code .code_line_break_hack{
+    margin:0;
+    border:0;
+    border-top:0;
+    border-bottom:0;
+}
+.component_attachment, .code_line_break_hack{
+  display: none;
+  visibility: collapse!important;
+  height: 0!important;
+}
+
+/* code line nums end*/
+
+/* block code start */
+.xiaoshujiang_code_container {
+    margin: 1em 0px 2em;
+    position: relative;
+}
+
+
+.xiaoshujiang_code_title_container{
+    font-size: 70%;
+    opacity: 0.5;
+}
+.xiaoshujiang_code_title_container>.xiaoshujiang_code_infos{
+    float: right;
+}
+/* block code end */
+
+
+/*mark start*/
+
+.mark{
+  border: 0;
+  background-color: rgba(221, 243, 231, 0.4);
+  color: #105012;
+  padding: 2px 4px;
+}
+
+.li_linenum.line_mark:before, .line_mark .li_linenum_before_span {
+    background: rgba(210, 118, 118, 0.6);
+}
+.line_mark{
+    border: 1px dashed #3A4C42;
+    margin-top: 2px;
+}
+code .mark, .xiaoshujiang_code .mark{
+    border-radius: 0px;
+    font-size: initial;
+    padding: initial;
+}
+/*mark end*/
+
+
+.xsj_code_strong{
+  -webkit-text-emphasis: triangle;
+  -webkit-text-emphasis-position: under;
+}
+
+/* attachment start */
+a.attachment{
+    background: #ecf0f3;
+    border: 1px solid #bec6cb;
+    display: inline-block;
+    padding: 5px;
+    margin: 2px;
+    min-width: 250px;
+}
+a.attachment i.fa{
+    font-size: 3em;
+  float: left;
+  margin-right: 0.2em;
+}
+a.attachment .filename{
+    vertical-align: top;
+  text-align: left;
+  font-weight: bold;
+}
+a.attachment .filesize{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  opacity: .6;
+  font-size: 80%;
+  white-space: nowrap;
+}
+/* attachment end */
+
+
+/*code chunk video, slideshare start*/
+.video_container{
+    width: 100%;
+    display: table;
+    text-align: center;
+    position: relative;
+    padding-bottom: 56.25%!important;
+}
+
+.video_container iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    vertical-align: middle;
+}
+
+.slideshare_container .inner{
+    position: relative;
+    width: 100%;
+}
+
+.slideshare_container .inner iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/*code chunk video, slideshare start*/
+
+
+
+/*mermaid start*/
+
+.mermaid {
+    text-align: center;
+}
+
+.mermaid_svg{
+    font-family: monospace;
+}
+/*mermaid stop*/
+
+
+/* patch evernote start*/
+.toc ul {
+    list-style-type: none;
+}
+/* patch evernote end*/
+
+
+/* image start*/
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+}
+
+.story_image_container{
+    text-align: center;
+}
+.story_image_container>.story_image{
+    display: inline-block;
+    position: relative;
+    max-width: 100%;
+}
+.story_image_caption, .xsj_remote_html_caption {
+    border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 10px;
+}
+.story_image_blank_caption, .xsj_remote_html_blank_caption{
+    display: none;
+}
+.story_image>img{
+    border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);
+}
+
+.story_inline_image{
+  display: inline-block;
+}
+.story_inline_image>img{
+    vertical-align: bottom;
+}
+/* image end*/
+
+.story_remote_resource_block{
+    text-align: center;
+}
+
+/* task list start */
+.task-list-item{
+    list-style: none;
+}
+.task-list-item.li_list_style{
+    list-style:inherit;
+}
+.task-list-item>input{
+    margin: 0 0 0 -1.5em;
+    width: 1.5em;
+}
+
+/* task list end */
+
+/* other start */
+em.cjk_emphasis{
+    font-style: normal;
+    font-family: Georgia,"Times New Roman",Times,"楷体","AR PL UKai CN", "NSimSun","Songti SC","SimSun",serif!important;
+}
+
+.flow-chart, .sequence-diagram{
+    text-align: center;
+}
+.plot, .plot-image{
+    text-align: center;
+    min-height: 200px;
+    min-width: 200px;
+}
+
+.mathjax-container{
+    text-align: center;
+}
+div.mathjax{
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.xsj_export_pdf .fa-border {
+  border: none;
+  border-radius: initial;
+  padding: initial;
+  margin: 0 .25em;
+  outline-offset: .2em;
+  outline: 1px solid #eee;
+}
+
+.xsj_export_pdf.preview.html_preview{
+  max-width: initial;
+  border: initial;
+  margin: initial;
+  padding: initial;
+  border-radius: initial;
+  box-shadow: initial;
+}
+/* other end */
+
+@media print{
+  body{
+    font-size: 18px;
+    word-wrap: break-word;
+    word-break: break-word;
+    background: initial!important;
+    font-kerning: normal;
+    text-rendering: geometricPrecision;
+  }
+  .preview.html_preview{
+    max-width: initial;
+    border: initial;
+    margin: initial;
+    padding: initial;
+    border-radius: initial;
+    box-shadow: initial;
+  }
+  .xiaoshujiang_element.xsj_anchor{
+    position: absolute;
+  }
+  tr { page-break-inside: avoid; }
+  .story_image_container{
+     page-break-inside: avoid;
+  }
+  blockquote{
+    page-break-inside: avoid;
+  }
+
+  .xsj_underline{
+      page-break-after: always;
+      visibility: hidden;
+  }
+}
+
+body{color:#2f2f2f}.xsj_hr{border-top:1px dashed #2f2f2f}kbd{color:#2f2f2f;border:solid 1px #2f2f2f;border-bottom-color:#2f2f2f;box-shadow:inset 0 -1px 0 #2f2f2f}table{border:1px solid rgba(34,36,38,.15)}.table td,.table th{border-top:1px solid #ddd}.table tbody+tbody{border-top:2px solid #ddd}.table .table{background:#fff}.table-striped tbody>tr:nth-child(odd)>td,.table-striped tbody>tr:nth-child(odd)>th{background:#f9f9f9}.table-celled.table tr td,.table-celled.table tr th{border-left:1px solid rgba(34,36,38,.1)}.line_mark{background:rgba(210,174,174,.3)}.xiaoshujiang_code .mark,code .mark{background:rgba(160,234,194,.7)}
+/*
+
+Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #F0F0F0;
+}
+
+
+/* Base color: saturation 0; */
+
+.hljs,
+.hljs-subst {
+  color: #444;
+}
+
+.hljs-comment {
+  color: #888888;
+}
+
+.hljs-keyword,
+.hljs-attribute,
+.hljs-selector-tag,
+.hljs-meta-keyword,
+.hljs-doctag,
+.hljs-name {
+  font-weight: bold;
+}
+
+
+/* User color: hue: 0 */
+
+.hljs-type,
+.hljs-string,
+.hljs-number,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-quote,
+.hljs-template-tag,
+.hljs-deletion {
+  color: #880000;
+}
+
+.hljs-title,
+.hljs-section {
+  color: #880000;
+  font-weight: bold;
+}
+
+.hljs-regexp,
+.hljs-symbol,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-link,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+  color: #BC6060;
+}
+
+
+/* Language color: hue: 90; */
+
+.hljs-literal {
+  color: #78A960;
+}
+
+.hljs-built_in,
+.hljs-bullet,
+.hljs-code,
+.hljs-addition {
+  color: #397300;
+}
+
+
+/* Meta color: hue: 200 */
+
+.hljs-meta {
+  color: #1f7199;
+}
+
+.hljs-meta-string {
+  color: #4d99bf;
+}
+
+
+/* Misc effects */
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+</style>
+</head><body>
+<div><div class="preview" id="wmd-preview">
+
+	<div class="preview html_preview xsj_export_html"><h1 class="xsj_heading_hash xsj_heading xsj_heading_h1" id="090909090909maven_1"><div class="xiaoshujiang_element xsj_anchor">
+  <a name="090909090909maven_1" class="blank_anchor_name"></a><a id="090909090909maven_1" class="blank_anchor_id"></a><a name="maven" class="blank_anchor_name"></a><a id="maven" class="blank_anchor_id"></a>
+</div>
+<span class="xsj_heading_content">						maven</span></h1>
+<h5 class="xsj_heading_hash xsj_heading xsj_heading_h5" id="1mavene79a84e4bd9ce794a8_2"><div class="xiaoshujiang_element xsj_anchor">
+  <a name="1mavene79a84e4bd9ce794a8_2" class="blank_anchor_name"></a><a id="1mavene79a84e4bd9ce794a8_2" class="blank_anchor_id"></a><a name="1maven的作用" class="blank_anchor_name"></a><a id="1maven的作用" class="blank_anchor_id"></a>
+</div>
+<span class="xsj_heading_content">1.maven的作用</span></h5>
+<div class="xiaoshujiang_code_container"><pre><code class="nohighlight hljs">i.增加第三方Jar   (commons-fileupload.jar   commons-io.jar)
+ii.jar包之间的依赖关系 （commons-fileupload.jar 自动关联下载所有依赖的Jar，并且不会冲突）</code></pre></div>
+<p class="xsj_paragraph xsj_paragraph_level_0">b.将项目拆分成若干个模块</p>
+<h5 class="xsj_heading_hash xsj_heading xsj_heading_h5" id="2mavene6a682e5bfb5efbc9a_3"><div class="xiaoshujiang_element xsj_anchor">
+  <a name="2mavene6a682e5bfb5efbc9a_3" class="blank_anchor_name"></a><a id="2mavene6a682e5bfb5efbc9a_3" class="blank_anchor_id"></a><a name="2maven概念" class="blank_anchor_name"></a><a id="2maven概念" class="blank_anchor_id"></a>
+</div>
+<span class="xsj_heading_content">2.Maven概念：</span></h5>
+<div class="xiaoshujiang_code_container"><pre><code class="nohighlight hljs">是一个基于Java平台的 自动化构建工具
+make-ant-maven-gradle</code></pre></div>
+<p class="xsj_paragraph xsj_paragraph_level_0">清理：删除编译的结果，为重新编译做准备。<br>
+编译：java-&gt;class<br>
+测试： 针对于 项目中的关键点进行测试，亦可用 项目中的测试代码 去测试开发代码；<br>
+报告：将测试的结果 进行显示<br>
+打包： 将项目中包含的多个文件 压缩成一个文件， 用于安装或部署。 （java项目-jar、web项目-war）<br>
+安装：将打成的包  放到  本地仓库，供其他项目使用。<br>
+部署：将打成的包  放到  服务器上准备运行。<br>
+--将java、js、jsp等各个文件 进行筛选、组装，变成一个 可以直接运行的项目<br>
+-- 大米-&gt;米饭</p>
+<div class="xiaoshujiang_code_container"><pre><code class="nohighlight hljs">-Eclipse中部署的web项目可以运行
+-将Eclipse中的项目，复制到tomcat/webapps中则不能运行
+-项目可以在webappas中直接运行
+
+Eclipse中的项目 ，在部署时 会生成一个 对应的 部署项目(在wtpwebapps中)，区别在于： 
+部署项目 没有源码文件src(java)，只有编译后的class文件和jsp文件
+因为二者目录结构不一致，因此tomcat中无法直接运行 Eclips中复制过来的项目 
+（因为 如果要在tomcat中运行一个项目，则该项目 必须严格遵循tomcat的目录结构）
+
+Eclipse中的项目 要在tomcat中运行，就需要部署： a.通过Eclipse中Add and Remove按钮进行部署
+					      b.将Web项目打成一个war包，然后将该war包复制到tomcat/webapps中 即可执行运行</code></pre></div>
+<p class="xsj_paragraph xsj_paragraph_level_0">自动化构建工具maven：将 原材料（java、js、css、html、图片）-&gt;产品（可发布项目）</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">编译-打包-部署-测试   --&gt; 自动构建</p>
+<h5 class="xsj_heading_hash xsj_heading xsj_heading_h5" id="e4b88be8bdbde9858de7bdaemaven_4"><div class="xiaoshujiang_element xsj_anchor">
+  <a name="e4b88be8bdbde9858de7bdaemaven_4" class="blank_anchor_name"></a><a id="e4b88be8bdbde9858de7bdaemaven_4" class="blank_anchor_id"></a><a name="下载配置maven" class="blank_anchor_name"></a><a id="下载配置maven" class="blank_anchor_id"></a>
+</div>
+<span class="xsj_heading_content">下载配置maven</span></h5>
+<div class="xiaoshujiang_code_container"><pre><code class="nohighlight hljs">a.配置JAVA_HOME
+b.配置MAVEN_HOME    :    D:\apache-maven-3.5.3\bin
+      M2_HOME
+c.配置path
+	%MAVEN_HOME%\bin	
+d.验证
+	mvn -v
+e.配置本地仓库  maven目录/conf/settings.xml
+	默认本地仓库 ：C:/Users/YANQUN/.m2/repository
+	修改本地仓库：  &lt;localRepository&gt;D:/mvnrep&lt;/localRepository&gt;</code></pre></div>
+<h5 class="xsj_heading_hash xsj_heading xsj_heading_h5" id="e4bdbfe794a8maven_5"><div class="xiaoshujiang_element xsj_anchor">
+  <a name="e4bdbfe794a8maven_5" class="blank_anchor_name"></a><a id="e4bdbfe794a8maven_5" class="blank_anchor_id"></a><a name="使用maven" class="blank_anchor_name"></a><a id="使用maven" class="blank_anchor_id"></a>
+</div>
+<span class="xsj_heading_content">使用maven</span></h5>
+<div class="xiaoshujiang_code_container"><pre><code class="nohighlight hljs">约定 优于 配置 
+
+硬编码方式：job.setPath("d:\\abc") ;
+配置方式：
+	job
+conf.xml                   &lt;path&gt;d:\\abc&lt;/path&gt;
+
+约定：使用默认值d:\\abc
+	job
+
+
+maven约定的目录结构：
+	项目
+	-src				
+		--main			：程序功能代码
+			--java		 java代码  (Hello xxx)
+			--resources      资源代码、配置代码
+		--test			：测试代码
+			--java			
+			--resources	
+        pom.xml
+	
+&lt;groupId&gt;域名翻转.大项目名&lt;/groupId&gt;
+&lt;groupId&gt;org.lanqiao.maven&lt;/groupId&gt;
+
+&lt;artifactId&gt;子模块名&lt;/artifactId&gt;
+&lt;artifactId&gt;HelloWorld&lt;/artifactId&gt;
+
+
+&lt;version&gt;版本号&lt;/version&gt;
+&lt;version&gt;0.0.1-SNAPSHOT&lt;/version&gt;</code></pre></div>
+<h5 class="xsj_heading_hash xsj_heading xsj_heading_h5" id="e4be9de8b596efbc9a_6"><div class="xiaoshujiang_element xsj_anchor">
+  <a name="e4be9de8b596efbc9a_6" class="blank_anchor_name"></a><a id="e4be9de8b596efbc9a_6" class="blank_anchor_id"></a><a name="依赖" class="blank_anchor_name"></a><a id="依赖" class="blank_anchor_id"></a>
+</div>
+<span class="xsj_heading_content">依赖：</span></h5>
+<p class="xsj_paragraph xsj_paragraph_level_0">commons-fileupload.jar --&gt; commons-io.jar<br>
+A中的某些类 需要使用B中的某些类，则称为A依赖于B<br>
+在maven项目中，如果要使用 一个当时存在的Jar或模块，则可以通过 依赖实现（去本地仓库、中央仓库<br>
+, 远程仓库去寻找）去寻找）</p>
+<h5 class="xsj_heading_hash xsj_heading xsj_heading_h5" id="e689a7e8a18cmvnefbc9a2020e5bf85e9a1bbe59ca8pomxmle68980e59ca8e79baee5bd95e4b8ade689a7e8a18c_7"><div class="xiaoshujiang_element xsj_anchor">
+  <a name="e689a7e8a18cmvnefbc9a2020e5bf85e9a1bbe59ca8pomxmle68980e59ca8e79baee5bd95e4b8ade689a7e8a18c_7" class="blank_anchor_name"></a><a id="e689a7e8a18cmvnefbc9a2020e5bf85e9a1bbe59ca8pomxmle68980e59ca8e79baee5bd95e4b8ade689a7e8a18c_7" class="blank_anchor_id"></a><a name="执行mvn-必须在pomxml所在目录中执行" class="blank_anchor_name"></a><a id="执行mvn-必须在pomxml所在目录中执行" class="blank_anchor_id"></a>
+</div>
+<span class="xsj_heading_content">执行mvn：  必须在pom.xml所在目录中执行</span></h5>
+<p class="xsj_paragraph xsj_paragraph_level_0">maven常见命令： （第一次执行命令时，因为需要下载执行该命令的基础环境，</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">所以会从中央仓库下载该环境到本地仓库）<br>
+编译：  (  Maven基础组件 ，基础Jar)<br>
+mvn compile   --只编译main目录中的java文件<br>
+mvn test     测试<br>
+mvn package          打成jar/war<br>
+mvn install  将开发的模块 放入本地仓库，供其他模块使用 （放入的位置 是通过gav决定）</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">mvn clean  删除target目录（删除编译文件的目录）<br>
+运行mvn命令，必须在pom.xml文件所在目录</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">私服 :</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">本地仓库 ----私服-----中央仓库去寻找</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">普通项目:jar<br>
+Web项目: War</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">配置本地仓库 settings</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">打包方式：<br>
+java工程——jar<br>
+web项目-war<br>
+父工程-pom</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">继承实现步骤：<br>
+1.建立父工程： 父工程的打包方式为pom</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">2.在父工程的pom.xml中编写依赖：<br>
+<dependencymanagement><br>
+<dependencies><br>
+<dependency></dependency></dependencies></dependencymanagement></p>
+<p class="xsj_paragraph xsj_paragraph_level_0">3.子类:</p>
+  <!-- 给当前工程 继承一个父工程：1加入父工程坐标gav   2当前工程的Pom.xml到父工程的Pom.xml之间的 相对路径  -->
+<div class="xiaoshujiang_code_container"><pre><code class="nohighlight hljs"> &lt;parent&gt;
+ 	&lt;!-- 1加入父工程坐标gav --&gt;
+ 	  &lt;groupId&gt;org.lanqiao.maven&lt;/groupId&gt;
+	  &lt;artifactId&gt;B&lt;/artifactId&gt;
+	  &lt;version&gt;0.0.1-SNAPSHOT&lt;/version&gt;
+	 &lt;!-- 2当前工程的Pom.xml到父工程的Pom.xml之间的 相对路径 --&gt; 
+	  &lt;relativePath&gt;../B/pom.xml&lt;/relativePath&gt;
+ &lt;/parent&gt;</code></pre></div>
+<p class="xsj_paragraph xsj_paragraph_level_0">4.在子类中 需要声明 ：使用那些父类的依赖</p>
+<div class="xiaoshujiang_code_container"><pre><code class="nohighlight hljs">		 &lt;dependency&gt;
+  		  &lt;!-- 声明：需要使用到父类的junit （只需要ga） --&gt;
+			&lt;groupId&gt;junit&lt;/groupId&gt;
+			&lt;artifactId&gt;junit&lt;/artifactId&gt;
+		  &lt;/dependency&gt;</code></pre></div>
+<p class="xsj_paragraph xsj_paragraph_level_0">聚合：</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">Maven项目能够识别的： 自身包含、本地仓库中的</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">Maven2依赖于Maven1，则在执行时：必须先将Maven1加入到本地仓库(install)，之后才能执行Maven2<br>
+以上 前置工程的install操作，可以交由“聚合” 一次性搞定。。。</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">聚合的使用：</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">在一个总工程中配置聚合： （聚合的配置 只能配置在（打包方式为pom）的Maven工程中）<br>
+modules<br>
+<modules><br>
+<!--项目的根路径  --><br>
+<module>../Maven1</module><br>
+<module>../Maven2</module></modules></p>
+  
+配置完聚合之后，以后只要操作总工程，则会自动操作 改聚合中配置过的工程
+<p class="xsj_paragraph xsj_paragraph_level_0">注意：clean命令 是删除 target目录，并不是清理install存放入的本地仓库</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">聚合：<br>
+Maven将一个大工程拆分成 若干个子工程（子模块）<br>
+聚合可以将拆分的多个子工程 合起来<br>
+继承：<br>
+父-&gt;子工程,可以通过父工程  统一管理依赖的版本</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">部署Web工程：war</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">通过maven直接部署运行web项目：<br>
+a.配置cargo<br>
+b. maven命令：deploy</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">实际开发中，开发人员 将自己的项目开发完毕后  打成war包(package) 交给实施人员去部署；</p>
+<p class="xsj_paragraph xsj_paragraph_level_0"><a href="http://www.mvnrepository.com" class="xsj_link xsj_auto_link">http://www.mvnrepository.com</a></p>
+<p class="xsj_paragraph xsj_paragraph_level_0">依赖：<br>
+A jar -&gt; B jar<br>
+<dependency><br>
+<groupid>junit</groupid><br>
+<artifactid>junit</artifactid><br>
+<version>4.0</version><br>
+<scope>test</scope><br>
+</dependency></p>
+<p class="xsj_paragraph xsj_paragraph_level_0">依赖<br>
+1.依赖的范围、依赖的有效性<br>
+compile(默认)  test  provided<br>
+2.依赖排除<br>
+A.jar -&gt;B.jar<br>
+当我们通过maven引入A.jar时，会自动引入B.jar<br>
+A.jar(x.java ,y.java,z.java)     B.jar(p.java  c.java  i.java)<br>
+A.jar和B.jar之间的 依赖的本质：z.java -&gt;c.java</p>
+   <!-- 排除依赖 beans -->
+<div class="xiaoshujiang_code_container"><pre><code class="nohighlight hljs">	    &lt;exclusions&gt;
+	    	&lt;exclusion&gt;
+	    		&lt;groupId&gt;org.springframework&lt;/groupId&gt;
+				 &lt;artifactId&gt;spring-beans&lt;/artifactId&gt;
+	    	&lt;/exclusion&gt;
+	    
+	    &lt;/exclusions&gt;</code></pre></div>
+<p class="xsj_paragraph xsj_paragraph_level_0">依赖：<br>
+a.commons-fileupload.jar  commons-io.jar  :虽然我们实际开发时，认为二者jar必须关联，<br>
+但是maven可能不这么认为。<br>
+b.如果X.jar 依赖于Y.jar，但是在引入X.jar之前  已经存在了Y.jar，则maven不会再在 引入X.jar时 引入Y.jar</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">3.依赖的传递性<br>
+A.jar-B.jar-&gt;C.jar</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">要使 A.jar -&gt;C.jar:当且仅当 B.jar 依赖于C.jar的范围是compile</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">多个maven项目（模块）之间如何 依赖： p项目 依赖于-&gt;q项目</p>
+<ol class="markdown_ol">
+<li>p项目 install 到本地仓库</li>
+<li>q项目 依赖：<br>
+<!-- 本项目  依赖于HelloWorld2项目 --><br>
+<dependency><br>
+<groupid>org.lanqiao.maven</groupid><br>
+<artifactid>HelloWorld2</artifactid><br>
+<version>0.0.1-SNAPSHOT</version><br>
+<scope>compile&lt;/scope<br>
+</scope></dependency></li>
+</ol>
+<p class="xsj_paragraph xsj_paragraph_level_0">在Eclipse中创建maven工程：<br>
+1.配置maven:<br>
+配置maven版本<br>
+配置本地仓库  ：  设置settings.xml</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">在eclipse中编写完pom.xml依赖后，需要maven-update project</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">package:<br>
+resources<br>
+compile<br>
+test<br>
+package</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">maven生命周期:<br>
+生命周期和构建的关系：<br>
+生命周期中的顺序：a b c d e<br>
+当我们执行c命令，则实际执行的是 a b c<br>
+该命令执行之前的所有命令</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">生命周期包含的阶段：3个阶段<br>
+clean lifecycle ：清理<br>
+pre-clean  clean  post-clearn</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">default lifecycle ：默认(常用)</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">site lifecycle：站点<br>
+pre-site   site   post-site site-deploy</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">再次强调：在pom.xml中增加完依赖后 需要maven - update project</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">约定大于配置</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">3.依赖的传递性</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">A.jar-B.jar-&gt;C.jar</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">要使 A.jar -&gt;C.jar :当且仅当 B.jar 依赖于C.jar的范围是compile</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">HelloWorldTime -&gt;HelloWorld2 -&gt;junit</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">4依赖原则：为了防止冲突<br>
+a.路径最短优先原则<br>
+b.路径长度相同：<br>
+i.在同一个pom.xml文件中有2个相同的依赖（覆盖）：后面声明的依赖 会覆盖前面声明的依赖 （严禁使用本情况，严禁在同一个pom中声明2个版本不同的依赖）<br>
+ii.如果是不同的 pom.xml中有2个相同的依赖（优先）：则先声明的依赖 ，会覆盖后声明的依赖</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">（JDK只能够识别 source folder中的源码）</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">多个maven项目（模块）之间如何 依赖： p项目 依赖于-&gt;q项目</p>
+<ol class="markdown_ol">
+<li>p项目 install 到本地仓库</li>
+<li>q项目 依赖：<br>
+<!-- 本项目  依赖于HelloWorld2项目 --><br>
+<dependency><br>
+<groupid>org.lanqiao.maven</groupid><br>
+<artifactid>HelloWorld2</artifactid><br>
+<version>0.0.1-SNAPSHOT</version><br>
+</dependency></li>
+</ol>
+<p class="xsj_paragraph xsj_paragraph_level_0">default lifecycle ：默认(常用)</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">site lifecycle：站点<br>
+pre-site   site   post-site site-deploy</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">再次强调：在pom.xml中增加完依赖后 需要maven - update project</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">统一项目的jdk：<br>
+build path:删除旧版本，增加新版本<br>
+右键项目-属性-Project Factors -java version 改版本  （之前存在要改的版本）</p>
+<p class="xsj_paragraph xsj_paragraph_level_0">通过maven统一jdk版本：<br>
+<profiles><br>
+<profile><br>
+<id>jdk-18</id><br>
+<activation><br>
+<activebydefault>true</activebydefault><br>
+<jdk>1.8</jdk><br>
+</activation><br>
+<properties><br>
+&lt;maven.compiler.source&gt;1.8&lt;/maven.compiler.source&gt;<br>
+&lt;maven.compiler.target&gt;1.8&lt;/maven.compiler.target&gt;<br>
+&lt;maven.compiler.compilerVersion&gt;1.8&lt;/maven.compiler.compilerVersion&gt;<br>
+</properties><br>
+</profile><br>
+</profiles></p>
+</div>
+
+</div></div>
+</body></html>
+
