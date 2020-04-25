@@ -1,5 +1,5 @@
 # MyBlog  
-[MyBlog](Relyonyou.github.io)
+[MyBlog](http://Relyonyou.github.io)
 
 友链 :
 
