@@ -1,283 +1,76 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="zh-CN">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    
-    <meta property="og:site_name" content="My New Hugo Site">
-    <meta property="og:type" content="article">
-
-    
-    <meta property="og:image" content="https://Relyonyou.github.io//">
-    <meta property="twitter:image" content="https://Relyonyou.github.io//" />
-    
-
-    
-    <meta name="title" content="" />
-    <meta property="og:title" content="" />
-    <meta property="twitter:title" content="" />
-    
-
-    
-    <meta name="description" content="">
-    <meta property="og:description" content="" />
-    <meta property="twitter:description" content="" />
-    
-
-    
-    <meta property="twitter:card" content="summary" />
-    
-    
-
-    <meta name="keyword"  content="">
-    <link rel="shortcut icon" href="/img/favicon.ico">
-
-    <title>Posts-</title>
-
-    <link rel="canonical" href="/post/">
-
-    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
-	
-    
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-
-    
-    <link rel="stylesheet" href="/css/hux-blog.min.css">
-
-    
-    <link rel="stylesheet" href="/css/zanshang.css">
-    
-    
-    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    
-    
-
-    
-    
-    <script src="/js/jquery.min.js"></script>
-    
-    
-    <script src="/js/bootstrap.min.js"></script>
-    
-    
-    <script src="/js/hux-blog.min.js"></script>
-
-    
-    
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>文章存档 · Cody</title>
+<meta name="description" content="Cody 的技术笔记存档，2020 年学习 Java 时整理。">
+<meta name="theme-color" content="#fbfbfa">
+<link rel="icon" href="/img/favicon.ico">
+<style>
+  :root{ --bg:#fbfbfa; --fg:#1a1a1c; --muted:#6f7076; --line:#e7e6e3;
+         --accent:#2b5fd9; --tag:#f4f3f0; }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#111113; --fg:#ededf0; --muted:#8e8f96; --line:#2a2a2f;
+           --accent:#8fb0ff; --tag:#1e1e22; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);
+       font:16px/1.85 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",
+            "Hiragino Sans GB","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+  a:hover{border-bottom-color:currentColor}
+  .topbar{max-width:720px;margin:0 auto;padding:22px 24px 0;display:flex;
+          align-items:center;justify-content:space-between;gap:16px}
+  .brand{font-weight:640;font-size:15px;color:var(--fg)}
+  .topbar nav{display:flex;gap:18px;font-size:14px}
+  .topbar nav a{color:var(--muted)}
+  .topbar nav a:hover{color:var(--accent)}
+  main{max-width:720px;margin:0 auto;padding:40px 24px 56px}
+  h1{margin:0 0 10px;font-size:30px;font-weight:640;letter-spacing:-.015em}
+  .lead{margin:0 0 34px;color:var(--muted);font-size:15.5px}
+  .list{border-top:1px solid var(--line)}
+  .entry{display:flex;gap:20px;padding:16px 2px;border-bottom:1px solid var(--line);align-items:baseline}
+  .entry time{flex:none;width:86px;color:var(--muted);font-size:14px;font-variant-numeric:tabular-nums}
+  .entry a{color:var(--fg);font-size:17px;font-weight:560}
+  .entry a:hover{color:var(--accent)}
+  .entry p{margin:4px 0 0;font-size:14.5px;color:var(--muted)}
+  footer{max-width:720px;margin:0 auto;padding:22px 24px 48px;
+         border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+  @media (max-width:600px){
+    .topbar{padding:16px 20px 0} main{padding:28px 20px 40px}
+    h1{font-size:25px}
+    .entry{flex-direction:column;gap:2px} .entry time{width:auto;font-size:13px}
+  }
+</style>
 </head>
-
-
-
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-    <div class="container-fluid">
-        
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">My New Hugo Site</a>
-        </div>
-
-        
-        
-        <div id="huxblog_navbar">
-            <div class="navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
-                    
-                        
-                    
-                    
-		    
-
-                    
-                </ul>
-            </div>
-        </div>
-        
+<body>
+<div class="topbar">
+  <a class="brand" href="/">Cody</a>
+  <nav><a href="/">首页</a><a href="/post/">文章存档</a></nav>
+</div>
+<main>
+  <h1>文章存档</h1>
+  <p class="lead">2020 年学 Java 时整理的笔记，共 4 篇。</p>
+  <div class="list">
+    <div class="entry">
+      <time>2020-04-23</time>
+      <div><a href="/post/blog/index3.html">MyBatis</a><p>MyBatis 基础：配置、映射文件与增删改查。</p></div>
     </div>
-    
-</nav>
-<script>
-    
-    
-    
-    var $body   = document.body;
-    var $toggle = document.querySelector('.navbar-toggle');
-    var $navbar = document.querySelector('#huxblog_navbar');
-    var $collapse = document.querySelector('.navbar-collapse');
-
-    $toggle.addEventListener('click', handleMagic)
-    function handleMagic(e){
-        if ($navbar.className.indexOf('in') > 0) {
-        
-            $navbar.className = " ";
-            
-            setTimeout(function(){
-                
-                if($navbar.className.indexOf('in') < 0) {
-                    $collapse.style.height = "0px"
-                }
-            },400)
-        }else{
-        
-            $collapse.style.height = "auto"
-            $navbar.className += " in";
-        }
-    }
-</script>
-
-
-
-<header class="intro-header" style="background-image: url('/')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>My Blog</h1>
-                    
-		    <span class="subheading"></span>
-                </div>
-            </div>
-        </div>
+    <div class="entry">
+      <time>2020-04-02</time>
+      <div><a href="/post/blog/index2.html">Maven 的常用操作</a><p>Maven 常用命令与依赖配置。</p></div>
     </div>
-</header>
-
-
-
-
-<article>
-    <div class="container">
-        <div class="row">
-            
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                post-container">
-
-         	
-                
-<div id="disqus-comment"></div>
-
-
-
-            </div>
-            
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
-
-                
-                
-
-                
-                
-            </div>
-        </div>
+    <div class="entry">
+      <time>2020-03-11</time>
+      <div><a href="/post/blog/index1.html">Git 的操作</a><p>Git 日常操作整理。</p></div>
     </div>
-</article>
-
-
-
-
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">
-                   
-                    
-                    
-                    
-                    
-                    
-
-                    
-
-		    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-            
-            
-            
-                </ul>
-		<p class="copyright text-muted">
-                    Copyright &copy; My New Hugo Site 2020
-                    <br>
-                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
-                    <iframe
-                        style="margin-left: 2px; margin-bottom:-5px;"
-                        frameborder="0" scrolling="0" width="100px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
-                    </iframe>
-                </p>
-            </div>
-        </div>
+    <div class="entry">
+      <time>2020-03-09</time>
+      <div><a href="/post/blog/">SQL 语句的分类</a><p>DDL / DML / DQL 的分类与常用语句。</p></div>
     </div>
-</footer>
-
-
-
-
-<script>
-    function async(u, c) {
-      var d = document, t = 'script',
-          o = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      o.src = u;
-      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-      s.parentNode.insertBefore(o, s);
-    }
-</script>
-
-
-
-
-
-
-<script>
-    
-    if($('#tag_cloud').length !== 0){
-        async("/js/jquery.tagcloud.js",function(){
-            $.fn.tagcloud.defaults = {
-                
-                color: {start: '#bbbbee', end: '#0085a1'},
-            };
-            $('#tag_cloud a').tagcloud();
-        })
-    }
-</script>
-
-
-<script>
-    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
-        var $nav = document.querySelector("nav");
-        if($nav) FastClick.attach($nav);
-    })
-</script>
-
-
-
-
-
-
+  </div>
+</main>
+<footer>© 2026 Cody · 静态站点</footer>
 </body>
 </html>
