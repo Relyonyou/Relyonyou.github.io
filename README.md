@@ -38,7 +38,7 @@ python3 -m http.server 8000
 | 首页文字 | `index.html`，搜索 `←改` 注释，共 5 处 |
 | 教育背景 | `index.html` 中 `<section id="education">`，中英各一套 |
 | 加一篇文章 | 新建 `post/blog/xxx.html`（可复制 `index2.html` 改正文），在 `post/index.html` 加一条 `<div class="entry">`，最后补进 `sitemap.xml` |
-| 换头像 | 覆盖 `img/author.jpg` |
+| 换头像 | 覆盖 `img/author-2026.jpg`（512×512，建议正方形） |
 | 改配色 | `index.html` 顶部 `:root` 变量；深色模式在 `@media (prefers-color-scheme: dark)` 里 |
 
 ## 设计说明
