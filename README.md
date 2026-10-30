@@ -13,13 +13,16 @@
 ├── sitemap.xml           站点地图
 ├── post/
 │   ├── index.html        文章存档列表
-│   └── blog/             4 篇旧笔记
+│   └── blog/             4 篇旧笔记（Markdown 源 + 生成的 HTML）
+│       ├── src/*.md      ← 内容源，改这里
+│       ├── img/          文章配图
 │       ├── index.html    SQL 语句的分类
 │       ├── index1.html   Git 的操作
 │       ├── index2.html   Maven 的常用操作
-│       └── index3.html   MyBatis（Typora 导出，保留原样式）
+│       └── index3.html   MyBatis
 ├── img/                  头像、favicon 等
-└── css/ js/              旧站点遗留资源（index3.html 仍依赖部分样式）
+├── tools/                文章构建脚本（见下）
+└── css/ js/              旧站点遗留资源（已无页面引用）
 ```
 
 ## 本地预览
@@ -37,9 +40,28 @@ python3 -m http.server 8000
 | --- | --- |
 | 首页文字 | `index.html`，搜索 `←改` 注释，共 5 处 |
 | 教育背景 | `index.html` 中 `<section id="education">`，中英各一套 |
-| 加一篇文章 | 新建 `post/blog/xxx.html`（可复制 `index2.html` 改正文），在 `post/index.html` 加一条 `<div class="entry">`，最后补进 `sitemap.xml` |
+| 改文章内容 | 编辑 `post/blog/src/<slug>.md`，然后 `python3 tools/build_articles.py` |
+| 加一篇文章 | 新建 `post/blog/src/<slug>.md`，在 `tools/build_articles.py` 的 `ARTICLES` 里加一行，跑脚本生成，再在 `post/index.html` 和 `sitemap.xml` 补一条 |
 | 换头像 | 覆盖 `img/author-2026.jpg`（512×512，建议正方形） |
 | 改配色 | `index.html` 顶部 `:root` 变量；深色模式在 `@media (prefers-color-scheme: dark)` 里 |
+
+## 文章维护
+
+文章内容以 Markdown 维护，HTML 由脚本生成（**只在本地跑，GitHub Pages 侧不需要任何构建**）：
+
+```bash
+python3 tools/build_articles.py      # src/*.md  ->  post/blog/index*.html
+```
+
+三个脚本，零第三方依赖：
+
+| 脚本 | 作用 |
+| --- | --- |
+| `tools/build_articles.py` | 入口：读 `src/*.md`，套上页面模板输出 HTML |
+| `tools/md2html.py` | 极简 Markdown 渲染器（标题/列表/代码/引用/图片/链接/粗体） |
+| `tools/html2md.py` | 一次性迁移工具：把 2020 年的旧 HTML 转成 Markdown，已完成历史使命，留作备查 |
+
+Markdown 支持的语法与 [`tools/md2html.py`](tools/md2html.py) 一致，没有引入表格、脚注等扩展；行尾两个空格表示换行。
 
 ## 设计说明
 
